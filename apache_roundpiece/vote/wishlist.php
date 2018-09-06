@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<title>Thors Ønskeseddel</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<!-- Banner -->
+<section id="banner">
+	<div class="inner">
+	<header>
+	<h1>Thors Ønskeseddel</h1>
+	<!--<h3> REMEMBER <br><br></h3>-->
+	</header>
+
+	<div class="flex ">
+
+	<div>
+	<span class="icon fa-gift" style="font-size:100px;"></span>
+	</div>
+
+	<div>
+	<span class="icon fa-tree" style="font-size:100px;"></span>
+	</div>
+
+	</div>
+
+	</div>
+</section>
+
+<a href="http://ec2-52-57-92-95.eu-central-1.compute.amazonaws.com/rss.xml">
+<img src="https://www.w3schools.com/xml/pic_rss.gif" width="36" height="14">
+</a>
+
+<!-- Middle Section -->
+<div class="inner">
+
+<section id="three" class="wrapper align-center">
+<table align="left" border="1" style= "background-color: #d2def2; color: #000000; margin: 0 auto;" >
+<caption><h3> ØNSKESEDDEL </h3></caption>
+
+<!-- TØJ -->
+<tr>
+<th colspan="2"><center><font face="Arial, Helvetica, sans-serif" size="5">TØJ</font></center></th>
+</tr>
+<tr>
+<td align="left">Gavekort til Selected, Sport24, Samsoe Samsoe, eller Quint </td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Sorte træningsshorts med lynlås i lommer, evt Adidas </td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Björn Borg Underbukser, Shorts/Long-Shorts (ikke short-shorts) Sort/Hvis str. M</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Langærmede skjorter, Regular Fit (ikke slim-fit) str. M</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Selected Jeans, helst stretch, str. 32/30</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Gabba Jeans, helst stretch, str. 32/30</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Trænings T-shirts Dri-Fit - Nike, Adidas, Under Armour, Fila - str. M</td> <td align="left">  N/A </td>
+</tr>
+
+<!-- COMPUTERSPIL -->
+<tr>
+<th colspan="2"><center><font face="Arial, Helvetica, sans-serif" size="5">COMPUTERSPIL</font></center></th>
+</tr>
+<tr>
+<td align="left">PLAYERUNKNOWN'S BATTLEGROUNDS</td> <td align="left"> <a href="http://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/"> LINK </a> </td>
+</tr>
+
+<!-- SKO -->
+<tr>
+<th colspan="2"><center><font face="Arial, Helvetica, sans-serif" size="5">SKO</font></center></th>
+</tr>
+<tr>
+<td align="left">UNDER ARMOUR UA CHARGED BANDIT 2 HERRE, str. 42,5 grå/sort</td> <td align="left"> <a href="https://www.sport24.dk/under-armour-ua-charged-bandit-2-herre.html?c=453733">LINK</a> </td>
+</tr>
+
+
+<!-- ARMBÅNDSUR -->
+<tr>
+<th colspan="2"><center><font face="Arial, Helvetica, sans-serif" size="5">ARMBÅNDSUR</font></center></th>
+</tr>
+<tr>
+<td align="left">Daniel Wellington - Classic Bristol Sølv Ur 40 mm (Mørke Brun Læderrem)</td> <td align="left"> <a href="https://www.danielwellington.com/dk/classic-bristol-silver-643?gclid=CLDG4PfStdACFWUlcgodmCkPNg">LINK</a></tr>
+</tr>
+
+<!-- ELEKTRONIK -->
+<tr>
+<th colspan="2"><center><font face="Arial, Helvetica, sans-serif" size="5">ELEKTRONIK</font></center></th>
+</tr>
+<tr>
+<td align="left">Gavekort til Elgiganten eller Power</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Kingston HyperX Impact Black Series 2 x 8 GB</td> <td align="left"> <a href="http://www.edbpriser.dk/ram/kingston-hyperx-impact-black-series-2-x-8-gb-id-8454909.aspx">LINK</a> </td>
+</tr>
+<tr>
+<td align="left">Puro ultra-slim 0.3 cover til Galaxy S7</td> <td align="left"> <a href="http://www.elgiganten.dk/product/mobil-gps/cover-etui/SGS703TR/puro-ultra-slim-0-3-cover-til-galaxy-s7">LINK</a> </td>
+</tr>
+<tr>
+<td align="left">SanDisk Extreme Plus Micro SD hukommelseskort - 64 GB</td> <td align="left"> <a href="http://www.elgiganten.dk/product/mobil-gps/hukommelseskort-mobil/SANEEPMSD64GB/sandisk-extreme-plus-micro-sd-hukommelseskort-64-gb">LINK</a> </td>
+</tr>
+<tr>
+<td align="left">SanDisk Ultra Micro SD hukommelseskort - 128 GB</td> <td align="left"> <a href="http://www.elgiganten.dk/product/mobil-gps/hukommelseskort-mobil/SANULMSD128GB/sandisk-ultra-micro-sd-hukommelseskort-128-gb">LINK</a> </td>
+</tr>
+<tr>
+<td align="left">PlayStation 4</td> <td align="left"> <a href="http://www.spilpriser.dk/playstation-4-konsoller/sony-playstation-4-500-gb-id-14508613.aspx">LINK</a></td>
+</tr>
+<tr>
+<td align="left">Sonos PLAY:1 (kan købes i fx elgiganten)</td> <td align="left"> <a href="http://www.hifipriser.dk/multirum-hoejttalere/sonos-play1-id-8362885.aspx?q=sonos">LINK</a> </td>
+</tr>
+<tr>
+<td align="left">Sonos Playbase (kan købes i fx elgiganten)</td> <td align="left"> <a href="https://www.sonos.com/da-dk/shop/playbase.html">LINK</a> </td>
+</tr>
+
+
+<!-- MISC -->
+<tr>
+<th colspan="2"><center><font face="Arial, Helvetica, sans-serif" size="5">MISC</font></center></th>
+</tr>
+<tr>
+<td align="left">Oplevelser til Mette og jeg</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">En god pude</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">En god blender der er nem at rengøre</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Minihakker</td> <td align="left"> N/A </td>
+</tr>
+<tr>
+<td align="left">Soda Stream og patroner til</td> <td align="left"> <a href="http://www.elgiganten.dk/catalog/husholdning/dk_sodastream/sodastream#">LINK</a> </td>
+</tr>
+
+
+<!--
+<tr>
+<td align="left">tekst</td> <td align="left"> <a href="url">LINK</a> </td>
+</tr>
+-->
+</table>
+</section>
+
+
+
+<br>
+<br>
+<div class="row">
+	<div class="12u$">
+		<p><center><img src="images/gifts.jpg" alt="gifts.jpg" width="50%"></center></p>
+	</div>
+</div>
+<br>
+<br>
+
+<footer id="footer">
+<div class="inner">
+<div>
+<span class="fa fa-wheelchair-alt" style="font-size:50px"></span>
+<h1>DISCLAIMER</h1>
+<p>Use this website at own risk <i class="fa fa-smile-o" style="font-size:24px"></i> </p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

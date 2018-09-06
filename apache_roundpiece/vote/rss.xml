@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+<title>Thors App</title>
+<link>http://ec2-52-57-92-95.eu-central-1.compute.amazonaws.com/wishlist.php</link>
+<description>Me playing around with rss</description>
+<item>
+<title>VESTAS AKTIEKURSER - Kurs = 427,10</title>
+<link>http://ec2-52-57-92-95.eu-central-1.compute.amazonaws.com/VESTAS</link>
+<description>
+Vestas Kurs: 427,10
+Vestas +/-: 1,04
+Vestas Bud: 426,80
+Vestas Udbud: 427,10
+</description>
+</item>
+</channel>
+</rss>
+
