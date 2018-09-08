@@ -35,4 +35,8 @@ Vestas Bud: $VESTAS_BUD
 Vestas Udbud: $VESTAS_UDBUD
 " > /var/www/html/vote/VESTAS
 
+# Writing to csv file
+DATE=`date '+%Y-%m-%d %H:%M:%S'`
+echo "$DAY,$VESTAS_KURS,$VESTAS_PLUS_MINUS,$VESTAS_BUD,$VESTAS_UDBUD \n"  >> /home/dktholar/stockData/vestas.csv
+
 

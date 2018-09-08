@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Banner -->
+<section id="banner">
+	<div class="inner">
+	<header>
+	<h1>STOCK STATUS</h1>
+	<!--<h3> REMEMBER <br><br></h3>-->
+	</header>
+
+	<div class="flex ">
+
+	<div>
+	<span class="fa fa-money" style="font-size:100px;"></span>
+	</div>
+
+	<div>
+	<span class="fa fa-line-chart" style="font-size:100px;"></span>
+	</div>
+
+	</div>
+
+	</div>
+</section>
+
+<a href="http://ec2-52-57-92-95.eu-central-1.compute.amazonaws.com/rss.xml">
+<img src="https://www.w3schools.com/xml/pic_rss.gif" width="36" height="14">
+</a>
+
+<!-- Middle Section -->
+<div class="inner">
+
+<!--  PUT GRAPH HERE! -->
+    {% for id in ids %}
+        <h3><center> {{id}} <center></h3>
+        <div id="{{id}}"></div>
+	{% endfor %}
+
+</div>
+<br>
+<br>
+
+
+
+<footer id="footer">
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://d14fo0winaifog.cloudfront.net/plotly-basic.js"></script>
+
+    <script type="text/javascript">
+        var graphs = {{graphJSON | safe}};
+        var ids = {{ids | safe}};
+        for(var i in graphs) {
+            Plotly.plot(ids[i], // the ID of the div, created above
+                        graphs[i].data,
+                        graphs[i].layout || {});
+        }
+    </script>
+
+	<div class="inner">
+	<div>
+	<span class="fa fa-wheelchair-alt" style="font-size:50px"></span>
+	<h1>DISCLAIMER</h1>
+	<p>Use this website at own risk <i class="fa fa-smile-o" style="font-size:24px"></i> </p>
+	</div>
+	</div>
+</footer>
+
+{% endblock %}
