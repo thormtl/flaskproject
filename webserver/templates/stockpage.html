@@ -32,7 +32,7 @@
 
 <!--  PUT GRAPH HERE! -->
     {% for id in ids %}
-        <h3><center> {{id}} <center></h3>
+        <!--<h3><center> {{id}} <center></h3>-->
         <div id="{{id}}"></div>
 	{% endfor %}
 
@@ -50,14 +50,20 @@
     <!-- Plotly.js -->
     <script src="https://d14fo0winaifog.cloudfront.net/plotly-basic.js"></script>
 
+    <!--<script type="text/javascript">-->
+        <!--var graphs = {{graphJSON | safe}};-->
+        <!--var ids = {{ids | safe}};-->
+        <!--for(var i in graphs) {-->
+            <!--Plotly.plot(ids[i], // the ID of the div, created above-->
+                        <!--graphs[i].data,-->
+                        <!--graphs[i].layout || {});-->
+        <!--}-->
+    <!--</script>-->
+
     <script type="text/javascript">
-        var graphs = {{graphJSON | safe}};
-        var ids = {{ids | safe}};
-        for(var i in graphs) {
-            Plotly.plot(ids[i], // the ID of the div, created above
-                        graphs[i].data,
-                        graphs[i].layout || {});
-        }
+		var graph = {{graphJSON | safe}};
+		var ids = {{ids | safe}};
+		Plotly.plot(ids[0], graph.data, graph.layout);
     </script>
 
 	<div class="inner">

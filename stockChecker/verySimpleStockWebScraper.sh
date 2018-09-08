@@ -37,6 +37,6 @@ Vestas Udbud: $VESTAS_UDBUD
 
 # Writing to csv file
 DATE=`date '+%Y-%m-%d %H:%M:%S'`
-echo "$DAY,$VESTAS_KURS,$VESTAS_PLUS_MINUS,$VESTAS_BUD,$VESTAS_UDBUD \n"  >> /home/dktholar/stockData/vestas.csv
+echo "$DAY,$VESTAS_KURS,$VESTAS_PLUS_MINUS,$VESTAS_BUD,$VESTAS_UDBUD"  >> /home/dktholar/stockData/vestas.csv
 
 
