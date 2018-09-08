@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 
 VESTAS=$(curl https://www.euroinvestor.dk/markeder/aktier/europa/danmark/omx-c25 | grep -A 5 "vestas-wind-systems-a-s" | grep -Eo "[0-9]+\,[0-9]+")
