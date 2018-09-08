@@ -16,23 +16,24 @@ app.debug = True
 @app.route("/")
 def index():
     col_names = names=["date","kurs","plus_minus","bud","udbud"]
-    df = pd.read_csv(os.path.join(APP_STATIC, 'stocks/vestas.csv'), names=col_names )
+    # df = pd.read_csv(os.path.join(APP_STATIC, 'stocks/vestas.csv'), names=col_names )
+    df = pd.read_csv("/home/dktholar/stockData/vestas.csv", names=col_names )
 
-    rng = pd.date_range('1/1/2011', periods=7500, freq='H')
-    ts = pd.Series(np.random.randn(len(rng)), index=rng)
+    # rng = pd.date_range('1/1/2011', periods=7500, freq='H')
+    # ts = pd.Series(np.random.randn(len(rng)), index=rng)
 
-    graphs = [
-        dict(
-            data=[
-                dict(
-                    x=df['date'],  # Can use the pandas data structures directly
-                    y=df['kurs']
-                )
-            ]
-        )
-    ]
+    # graphs = [
+    #     dict(
+    #         data=[
+    #             dict(
+    #                 x=df['date'],  # Can use the pandas data structures directly
+    #                 y=df['kurs']
+    #             )
+    #         ]
+    #     )
+    # ]
 
-    graphs2 = dict(
+    graphs = dict(
         data=[go.Scatter(
                 x=df['date'],
                 y=df['kurs']
@@ -58,7 +59,7 @@ def index():
     # PlotlyJSONEncoder appropriately converts pandas, datetime, etc
     # objects to their JSON equivalents
 
-    graphJSON = json.dumps(graphs2, cls=plotly.utils.PlotlyJSONEncoder)
+    graphJSON = json.dumps(graphs, cls=plotly.utils.PlotlyJSONEncoder)
 
     return render_template(
         'stockpage.html',
@@ -76,5 +77,5 @@ def index():
 if __name__ == "__main__":
 
 
-    # app.run(host='0.0.0.0')
-    app.run()
+    app.run(host='0.0.0.0')
+    # app.run()
