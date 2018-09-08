@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-VESTAS=$(curl https://www.euroinvestor.dk/markeder/aktier/europa/danmark/omx-c25 | grep -A 5 "vestas-wind-systems-a-s" | grep -Eo "[0-9]+\,[0-9]+") | sed 's/,/./g'
+VESTAS=$(curl https://www.euroinvestor.dk/markeder/aktier/europa/danmark/omx-c25 | grep -A 5 "vestas-wind-systems-a-s" | grep -Eo "[0-9]+\,[0-9]+" | sed 's/,/./g')
 VESTAS_KURS=$(echo $VESTAS | awk '{print $1}')
 VESTAS_PLUS_MINUS=$(echo $VESTAS | awk '{print $2}')
 VESTAS_BUD=$(echo $VESTAS | awk '{print $3}')
