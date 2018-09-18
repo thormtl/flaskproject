@@ -5,6 +5,8 @@ import plotly.plotly as py
 
 import json
 import pandas as pd
+from pandas.tseries.offsets import BDay
+
 import numpy as np
 import os
 from settings import APP_STATIC
@@ -16,8 +18,15 @@ app.debug = True
 @app.route("/")
 def index():
     col_names = names=["date","kurs","plus_minus","bud","udbud"]
+    isBusinessDay = BDay().onOffset
+
+
+
     # df = pd.read_csv(os.path.join(APP_STATIC, 'stocks/vestas.csv'), names=col_names )
     df = pd.read_csv("/home/dktholar/stockData/vestas.csv", names=col_names ).query("kurs > 5.0")
+    # df['date'] = df['date'].astype('|S')
+    # print(df.dtypes)
+    # print(df)
 
     # rng = pd.date_range('1/1/2011', periods=7500, freq='H')
     # ts = pd.Series(np.random.randn(len(rng)), index=rng)
@@ -35,8 +44,9 @@ def index():
 
     graphs = dict(
         data=[go.Scatter(
-                x=df['date'],
-                y=df['kurs']
+                x=df['date'].index.values,
+                y=df['kurs'],
+                text=df['date']
         )],
         layout=dict(
             title="Vestas A/S",
