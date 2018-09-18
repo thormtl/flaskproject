@@ -17,7 +17,7 @@ app.debug = True
 def index():
     col_names = names=["date","kurs","plus_minus","bud","udbud"]
     # df = pd.read_csv(os.path.join(APP_STATIC, 'stocks/vestas.csv'), names=col_names )
-    df = pd.read_csv("/home/dktholar/stockData/vestas.csv", names=col_names )
+    df = pd.read_csv("/home/dktholar/stockData/vestas.csv", names=col_names ).query("kurs > 5.0")
 
     # rng = pd.date_range('1/1/2011', periods=7500, freq='H')
     # ts = pd.Series(np.random.randn(len(rng)), index=rng)
